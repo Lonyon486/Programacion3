@@ -19,3 +19,10 @@
 .row{
 	margin: 20px;
 }
+
+
+.card-img-topEdit{
+	border-style: solid;
+	border-color: red;
+}
+

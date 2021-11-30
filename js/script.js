@@ -5,6 +5,45 @@ form1.addEventListener("submit", function(event){
 	event.preventDefault();
 	console.log(event);
 	console.log("submit");
+
+});
+
+
+var img1 = document.getElementById("image1");
+var img2 = document.getElementById("image2");
+var img3 = document.getElementById("image3");
+var img4 = document.getElementById("image4");
+var img5 = document.getElementById("image5");
+var img6 = document.getElementById("image6");
+var img7 = document.getElementById("image7");
+var img8 = document.getElementById("image8");
+
+//firstImage.onclick = firstImage.classList.add("card-img-topEdit");
+
+
+img1.addEventListener("click",function(){
+	img1.classList.add("card-img-topEdit");
+});
+img2.addEventListener("click",function(){
+	img2.classList.add("card-img-topEdit");
+});
+img3.addEventListener("click",function(){
+	img3.classList.add("card-img-topEdit");
+});
+img4.addEventListener("click",function(){
+	img4.classList.add("card-img-topEdit");
+});
+img5.addEventListener("click",function(){
+	img5.classList.add("card-img-topEdit");
+});
+img6.addEventListener("click",function(){
+	img6.classList.add("card-img-topEdit");
+});
+img7.addEventListener("click",function(){
+	img7.classList.add("card-img-topEdit");
+});
+img8.addEventListener("click",function(){
+	img8.classList.add("card-img-topEdit");
 });
 
 //capture name
@@ -75,4 +114,5 @@ form1.addEventListener("submit", function(event){
 			+ " " + data.verifyEmail
 			+ " " + data.verifyPassword
 			+ " " + data.bio;
+
 });
