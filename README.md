@@ -1,7 +1,7 @@
 # Programacion3
 Programacion 3 web
 
-@Author: Nicolas Gutierrez 201911623
+@Author: Nicolas Gutierrez - 201911623
 
 Html: Crear un contenido en cada parque con 2 imagénes de cada uno //
 Css: las imagenes deben quedar a dos columnas y de la misma altura.

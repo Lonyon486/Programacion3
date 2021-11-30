@@ -20,6 +20,7 @@ var img8 = document.getElementById("image8");
 
 //firstImage.onclick = firstImage.classList.add("card-img-topEdit");
 
+//function that modify the class of the image
 
 img1.addEventListener("click",function(){
 	img1.classList.add("card-img-topEdit");
