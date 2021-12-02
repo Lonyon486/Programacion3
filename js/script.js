@@ -101,9 +101,25 @@ form1.addEventListener("submit", function(event){
 		+ " " + verifyEmail 
 		+ " " + verifyPassword 
 		+ " " + bio);
+
 		*/
+
+		/*
 		var data = Object.fromEntries(new FormData(event.target).entries());
 		var result = document.getElementById("data_result");
+		var container = {
+			data.name, data.lastName, data.birthDate
+		};
+		console.log(container);
+
+		result.innerHTML = data.name 
+			+ " " + data.lastName
+			+ " " + data.birthDate;
+
+		*/
+
+		/*
+
 		result.innerHTML = data.name
 			+ " " + data.lastName
 			+ " " + data.phoneNumber
@@ -115,5 +131,19 @@ form1.addEventListener("submit", function(event){
 			+ " " + data.verifyEmail
 			+ " " + data.verifyPassword
 			+ " " + data.bio;
+		*/
 
+});
+
+var container = [];
+
+form1.addEventListener("submit", function(event){
+	var data = Object.fromEntries(new FormData(event.target).entries());
+	var result = document.getElementById("data_result");
+	container.push(data.name, data.lastName, data.birthDate);
+	//var container = [data.name, data.lastName, data.birthDate];
+	console.log(container);
+	result.innerHTML = data.name 
+			+ " " + data.lastName
+			+ " " + data.birthDate;
 });
