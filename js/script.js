@@ -135,15 +135,29 @@ form1.addEventListener("submit", function(event){
 
 });
 
-var container = [];
+var count = 1;
 
 form1.addEventListener("submit", function(event){
+	var container = [];
 	var data = Object.fromEntries(new FormData(event.target).entries());
 	var result = document.getElementById("data_result");
 	container.push(data.name, data.lastName, data.birthDate);
+
+	localStorage.setItem(count, container);
+	count++;
+	var aux = "";
+
+	for(i = 0; i < localStorage.length; i++){
+
+		var data = localStorage.getItem(localStorage.key(i));
+		aux += "Value: " + data + "\n"; 
+	}
+	console.log(aux);
+	
 	//var container = [data.name, data.lastName, data.birthDate];
 	console.log(container);
 	result.innerHTML = data.name 
 			+ " " + data.lastName
 			+ " " + data.birthDate;
+	
 });
