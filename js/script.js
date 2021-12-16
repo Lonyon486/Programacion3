@@ -142,7 +142,10 @@ form1.addEventListener("submit", function(event){
 	var data = Object.fromEntries(new FormData(event.target).entries());
 	var result = document.getElementById("data_result");
 	var result_localStorage = document.getElementById("data_storage");
-	container.push(data.name, data.lastName, data.birthDate);
+	var name = data.name;
+	var lastName = data.lastName;
+	var birthDate = data.birthDate;
+	container.push(name, lastName, birthDate);
 
 	localStorage.setItem(count, container);
 	count++;
@@ -158,8 +161,8 @@ form1.addEventListener("submit", function(event){
 	//var container = [data.name, data.lastName, data.birthDate];
 	console.log(container);
 	result_localStorage.innerHTML = aux;
-	result.innerHTML = data.name 
-			+ " " + data.lastName
-			+ " " + data.birthDate;
+	result.innerHTML = name 
+			+ " " + lastName
+			+ " " + birthDate;
 	
 });
