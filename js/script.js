@@ -144,7 +144,8 @@ form1.addEventListener("submit", function(event){
 	var result_localStorage = document.getElementById("data_storage");
 	var name = data.name;
 	var lastName = data.lastName;
-	var birthDate = data.birthDate;
+	let birthDate = new Date();
+	birthDate = data.birthDate;
 	container.push(name, lastName, birthDate);
 
 	localStorage.setItem(count, container);
